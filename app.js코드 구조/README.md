@@ -128,4 +128,8 @@ app.use((err, req, res, next) => {
 
 위에 코드는 "/", "/users"에 대한 get요청만 처리할 수 있지만, 만약 "/list" 이런 요청이 들어 왔을 경우에는 해당하는 라우터가 없기 때문에 3번 미들웨어로 들어오게 된다. 그리고 3번 미들웨어는 next(error)를 넘겨주면서 에러 핸들링 미들웨어인 4번 코드로 넘어가고 에러를 처리한다.
 
-[소스코드]()
+[소스코드](https://github.com/yongyongi/devyongi_blog/blob/master/app.js%EC%BD%94%EB%93%9C%20%EA%B5%AC%EC%A1%B0/index.js)
+
+## 참고
+
+Node교과서 - 제로초
