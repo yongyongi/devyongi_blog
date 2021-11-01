@@ -2,7 +2,7 @@
 
 node로 서버를 만들때,
 
-app.js에 작성하는 코드는 대부분 프로젝트에서 비슷한 구조를 가지기 때문에 자주 설치하는 [미들웨어](https://devyongi.tistory.com/manage/newpost/?type=post&returnURL=%2Fmanage%2Fposts%2F#)나 패키지에 대해서 알아 놓으면 좋다.
+app.js에 작성하는 코드는 대부분 프로젝트에서 비슷한 구조를 가지기 때문에 자주 설치하는 [미들웨어](https://devyongi.tistory.com/4)나 패키지에 대해서 알아 놓으면 좋다.
 (여기서 app.js는 서버 구동의 핵심이 되는 파일이다.)
 
 ```
