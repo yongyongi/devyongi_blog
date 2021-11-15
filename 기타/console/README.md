@@ -25,4 +25,4 @@ console.timeEnd("test");
     - 이벤트 루프 원리 연습할 때 유용
 6.  console.table
     - 배열안의 객체를 테이블 형식으로 로깅
-      <img src="images/image1.png" height="100">
+<img src="images/image1.png">
