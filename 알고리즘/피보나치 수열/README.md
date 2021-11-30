@@ -15,7 +15,7 @@ function solution(n) {
 
 처음 0과 1은 그대로 리턴하고 3번째 숫자(인덱스2)부터 규칙을 적용하여 재귀로 풀었다. 하지만, 큰 수가 들어갈 때는 재귀하는 횟수가 많아 콜스택 에러, 런타임 에러가 났다. 또, 함수를 한번 호출하면 두번의 호출을 더 하기 때문에 시간 복잡도는 O(2^n)으로 매우 비효율적이다.
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb9fde2c-dc39-4c22-8251-e14ec5178d9d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-10-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.06.20.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211108%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211108T133204Z&X-Amz-Expires=86400&X-Amz-Signature=29df002c22495adc274331da7600470f8f53b8dd8e12dcca58b7d5b0cc92661b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202021-10-16%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%252010.06.20.png%22">
+<img src="./images/fibbonacci-recurisive.png">
 
 사진처럼 단지, 피보나치의 7번째 값을 구하기 위해서는 많은 계산 과정이 필요하다. 여기서 문제는 반복적인 계산 과정이 많다는 것이다. fib(3), fib(4) 등 반복적인 계산 과정이 많기 때문에 이미 구한 값들을 메모리에 저장하여 반복적인 과정을 없애면서 효율적인 코드를 작성해 보았다.
 
