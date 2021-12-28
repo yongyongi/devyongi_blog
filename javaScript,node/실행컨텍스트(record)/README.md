@@ -39,13 +39,13 @@ A();
 실행 컨텍스트 안의 Record를 알게 되면, Hoisting에 대해 보다 깊은 이해를 할 수 있다.
 
 <aside>
-💡 **Record(환경 레코드)** : 식별자와 식별자에 바인딩 된 값을 기록해두는 객체.
+💡 Record(환경 레코드) : 식별자와 식별자에 바인딩 된 값을 기록해두는 객체.
 정식명칭은 Environment Record이다.
 
 </aside>
 
 <aside>
-💡 **Hoisting** : 선언문이 마치 최상단에 끌어올려진 듯한 현상, 변수를 선언하기 전에도 변수를 참조할 수 있는 현상
+💡 Hoisting : 선언문이 마치 최상단에 끌어올려진 듯한 현상, 변수를 선언하기 전에도 변수를 참조할 수 있는 현상
 
 </aside>
 
@@ -75,8 +75,7 @@ console.log(christmas);
 1. 자바스크립트 코드를 실행하면, 전역 실행 컨텍스트를 생성하여 Call Stack에 넣는다.
 2. 전체 코드를 스캔하면서 선언문만 찾아 실행 컨텍스트의 Record에 미리 선언해둔다.
 3. - **var일 경우 ⇒** undefined로 초기화 해둠
-
-- **let, const일 경우 ⇒** 값을 초기화 해두지 않음
+   - **let, const일 경우 ⇒** 값을 초기화 해두지 않음
 
 ### 2. 실행 단계
 
@@ -119,6 +118,7 @@ let malang = () => {
 ```
 
 <img src="./images/4.png" width="100%">
+
 - var
 
 이 경우 변수 호이스팅과 같이 Record에 malang이라는 식별자를 선언해두고 값을 `undefined`로 초기화 해두기 때문에 첫번째 줄의 malang값으로는 `undefined`이지만, `undefined`는 호출될 수 없기 때문에 `Type Error`가 발생한다.
